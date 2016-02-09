@@ -217,7 +217,7 @@
         margin: 0 auto;
         left: 0;
         right: 0;
-        top: 50%;
+        top: 30%;
         margin-top: -75px;
         z-index: 20;
         background-color: #fbfbfb;
@@ -349,7 +349,6 @@
           newEvents.push(d.name.substr(index+2));
 
           var result = getFlowSteps(d, newEvents);
-          console.log(result);
           if (result != 'error' && result != undefined) {
             resetEvents();
             event_list = newEvents;
