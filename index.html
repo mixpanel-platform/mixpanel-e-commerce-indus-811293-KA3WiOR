@@ -349,6 +349,7 @@
           newEvents.push(d.name.substr(index+2));
 
           var result = getFlowSteps(d, newEvents);
+          console.log(result);
           if (result != 'error' && result != undefined) {
             resetEvents();
             event_list = newEvents;
@@ -663,7 +664,7 @@
           });
         });
         if (nodeChildren.length > 1) {
-          error('Multiple events selected in a step. Please select only one event per step. Events can be selected or deselected by clicking on the event name or applicable node.')
+          error('Multiple events selected in a step. Please select only one event per step. Events can be selected or deselected by clicking on the event name or applicable node.');
           console.log('error');
           return 'error';
         }
